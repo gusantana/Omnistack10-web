@@ -27,9 +27,7 @@ function DevForm({ onSubmit }) {
     }, []);
 
     async function handleSubmit(e) {
-        console.log(e);
-        // eslint-disable-next-line no-unused-expressions
-        e.preventDefault;
+        e.preventDefault();
         await onSubmit( {
             github_username,
             techs,
